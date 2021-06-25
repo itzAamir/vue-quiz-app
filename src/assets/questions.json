@@ -1,0 +1,20 @@
+[
+   {
+      "id": 1,
+      "question": "What is capital of India?",
+      "options": ["India", "China", "Bangladesh", "Japan"],
+      "answer": "India"
+   },
+   {
+      "id": 2,
+      "question": "What is capital of China?",
+      "options": ["A", "B", "C", "D"],
+      "answer": "B"
+   },
+   {
+      "id": 3,
+      "question": "What is capital?",
+      "options": ["P", "Q", "R", "S"],
+      "answer": "R"
+   }
+]
