@@ -1,20 +1,63 @@
 [
    {
       "id": 1,
-      "question": "What is capital of India?",
-      "options": ["India", "China", "Bangladesh", "Japan"],
-      "answer": "India"
+      "question": "Energy=____to the speed of light squared",
+      "options": ["Gravity", "Lightning", "Weight", "Mass"],
+      "answer": "Mass"
    },
    {
       "id": 2,
-      "question": "What is capital of China?",
-      "options": ["A", "B", "C", "D"],
-      "answer": "B"
+      "question": "What's the name for China's film industry?",
+      "options": ["Hollywood", "Tollywood", "Bollywood", "Cantonwood"],
+      "answer": "Cantonwood"
    },
    {
       "id": 3,
-      "question": "What is capital?",
-      "options": ["P", "Q", "R", "S"],
-      "answer": "R"
+      "question": "Biology is the study of what?",
+      "options": ["Life", "The human brain", "Environment", "Chemicals"],
+      "answer": "Life"
+   },
+   {
+      "id": 4,
+      "question": "What is the formula for force?",
+      "options": [
+         "Force/Mass",
+         "Mass × Acceleration",
+         "Mass × Velocity",
+         "Speed/Time"
+      ],
+      "answer": "Mass × Acceleration"
+   },
+   {
+      "id": 5,
+      "question": "What causes and earthquake?",
+      "options": [
+         "Hitting the ground",
+         "Tectonic Plates sliding, bumping, and hitting each other",
+         "Plates hitting each other, and sliding under each other"
+      ],
+      "answer": "Tectonic Plates sliding, bumping, and hitting each other"
+   },
+   {
+      "id": 6,
+      "question": "What does IDE stand for?",
+      "options": [
+         "Integrated Debugging Equipment",
+         "Integrated Development Environment",
+         "Integrated Development Equipment"
+      ],
+      "answer": "Integrated Development Environment"
+   },
+   {
+      "id": 7,
+      "question": "The spelling and grammar of a programming language is called __________.",
+      "options": ["diction", "word wall", "vocabulary", "syntax"],
+      "answer": "syntax"
+   },
+   {
+      "id": 8,
+      "question": "Process of finding and fixing errors in the syntax so the computer program will run properly",
+      "options": ["Bugs", "Sequence", "Debugging", "Command"],
+      "answer": "Debugging"
    }
 ]

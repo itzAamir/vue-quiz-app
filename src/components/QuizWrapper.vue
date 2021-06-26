@@ -2,7 +2,8 @@
    <div class="quiz-container">
       <div class="question-wrapper">
          <span class="title"
-            >Question 1<span style="font-size: 0.7em">/4</span></span
+            >Question {{ currQuiz + 1
+            }}<span style="font-size: 0.7em">/{{ quizLength }}</span></span
          >
          <br />
          <span class="question">{{ quizzes.question }}</span>
@@ -13,8 +14,7 @@
                v-for="option of quizzes.options"
                :option="option"
                :key="option"
-               :answer="quizzes.answer"
-               :onChange="onChange"
+               @handle-next="$emit('handle-next', option, quizzes.answer)"
             />
          </div>
       </div>
@@ -28,7 +28,8 @@ export default {
    name: "QuizWrapper",
    props: {
       quizzes: Object,
-      onChange: Function,
+      quizLength: Number,
+      currQuiz: Number,
    },
    components: {
       Option,
@@ -41,11 +42,7 @@ export default {
    display: grid;
    gap: 1rem;
    grid-template-columns: 1fr 1fr;
-   background: #3f4964;
-   width: 40em;
-   height: 18em;
-   border-radius: 20px;
-   padding: 2em;
+   height: 100%;
 }
 
 .title {

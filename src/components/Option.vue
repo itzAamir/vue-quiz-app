@@ -7,15 +7,12 @@
 <script>
 export default {
    name: "Option",
-   props: ["option", "answer", "onChange"],
+   props: {
+      option: String,
+   },
    methods: {
       handleClick() {
-         if (this.option === this.answer) {
-            console.log("correct");
-            // this.onChange();
-         }
-         //  console.log("option -> ", this.option);
-         //  console.log("answer -> ", this.answer);
+         this.$emit("handle-next", this.option);
       },
    },
 };
