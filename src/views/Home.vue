@@ -38,6 +38,10 @@ export default {
       };
    },
    created() {
+      if (!this.$route.params.username) {
+         this.$router.push("/login");
+         return;
+      }
       this.quizLength = this.quizzes.length;
    },
    methods: {
