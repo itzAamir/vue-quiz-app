@@ -1,6 +1,6 @@
 <template>
    <div class="score-container">
-      <h1>You Scored {{ score }}/{{ quizLength }}</h1>
+      <h1>{{ username }}, you've Scored {{ score }}/{{ quizLength }}</h1>
       <button @click="$emit('handle-retry')">Retry</button>
    </div>
 </template>
@@ -11,6 +11,7 @@ export default {
    props: {
       quizLength: Number,
       score: Number,
+      username: String,
    },
 };
 </script>
